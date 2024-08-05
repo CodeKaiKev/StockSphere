@@ -80,7 +80,7 @@ const CompanyOverview = (props) => {
             });
           }
         } catch (error) {
-          console.error('Error fetching company overview:', error);
+       
           setCompanyDetails({
             Details: "Error 429: Too many requests. Please try again later. The API has a limit on the number of requests that can be made within a certain time period. We apologize for the inconvenience.",
             Category: "Please wait a Minute before the next search.",

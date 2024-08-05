@@ -61,7 +61,7 @@ const StockMarket = (props) => {
         Ticker: StockSymbol,
       });
     } catch (error) {
-      console.error('Error fetching stock data:', error);
+      // console.error('Error fetching stock data:', error);
     }
   };
   if (StockSymbol === 'Initial') {

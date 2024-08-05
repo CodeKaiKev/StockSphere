@@ -13,7 +13,7 @@ const getStockInfo = async (symbol) => {
         });
         return response.data;
     } catch (error) {
-        console.error('Error fetching stock info:', error);
+        // console.error('Error fetching stock info:', error);
         throw error;
     }
 };
