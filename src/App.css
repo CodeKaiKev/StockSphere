@@ -1,38 +1,215 @@
+/* Global Styles */
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Header Styles */
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #3b3838;
+  height: 7vh;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-top: 25px;
+  margin-bottom: -1px;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.header-title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 0 0 4px #fff;
+ 
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  .header-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 0 0 3px #fff;
+    font-family: 'Montserrat', sans-serif;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* Add this to make the search bar smaller on smaller screens */
+  .header-input {
+    padding: 5px;
+    font-size: 10px;
+    width: 100px; /* adjust the width as needed */
+  }
+
+  .search-icon {
+    right: 8px;
+    font-size: 14px; /* adjust the font size as needed */
   }
 }
+
+
+
+.header-input {
+  background-color: #000000;
+ 
+  color: #fffcfc;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border-color: #3b3838;
+  outline: none;
+  
+}
+.search-container {
+  position: relative;
+  margin-left: auto;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.search-results {
+  position: absolute;
+  top: 100%; /* position below the search bar */
+  left: 0;
+  width: 100%;
+  background-color: #000000;
+  border: 1px solid rgb(71, 69, 59);
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+  color: rgb(255, 255, 255);
+  border-radius: 0 0 5px 5px; /* add rounded corners to the bottom */
+  text-align: left;
+}
+
+.search-results li {
+  padding: 10px;
+  border-bottom: 1px solid rgb(71, 69, 59);
+  cursor: pointer
+}
+
+.search-results li:hover {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.header-input {
+  padding-right: 30px; /* make space for the icon */
+}
+.header-input::placeholder {
+  color: #fff6f6;
+}
+
+.fas {
+  font-size: 18px;
+}
+
+body {
+  
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  margin-top: -25px;
+}
+
+.company-profile-container {
+  background-color: #333;
+  padding: 20px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.company-profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.company-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.company-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.company-profile-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.stat-block {
+  background-color: #444;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 10px;
+  margin: 10px;
+  width: calc(33.33% - 20px);
+}
+
+.stat-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  font-size: 18px;
+  color: #fff;
+}
+
+.company-profile-description {
+  margin-bottom: 20px;
+}
+
+.company-description {
+  font-size: 18px;
+  color: #fff;
+}
+
+.company-profile-link {
+  text-align: center;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #4CAF50;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+/* Note: 
+  - The padding property is added to the .App-header class to make it symmetrical.
+  - You can adjust the padding value according to your needs.
+  - The styles are organized into sections for better readability.
+*/

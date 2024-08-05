@@ -1,0 +1,28 @@
+.stock-ticker {
+    font-family:monospace; 
+    font-size: 24px;
+    overflow: hidden;
+    background-color: rgb(4, 6, 6);
+    border: 1px solid #ddd;
+    box-shadow: 0 0 1px rgba(228, 48, 48, 0.1);
+    color: #ffe600;
+  }
+  .stock-ticker:hover {
+    background-color: #d3c96a;
+    color: rgb(0, 0, 0);
+  }
+  .ticker-symbol {
+    padding: 2px 4px;
+    border-radius: 2px;
+    /* //background-color: #000000; */
+    
+    margin-right: 10px;
+  }
+  
+  marquee {
+    width: 100%;
+    padding: 10px;
+    /* background-color: #a70e0e; */
+    /* border: 1px solid #ddd; */
+    /* box-shadow: 0 0 10px rgba(208, 197, 197, 0.1); */
+  }

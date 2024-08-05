@@ -1,0 +1,171 @@
+/* CompanyOverview.css */
+
+.company-overview {
+  background-color: #000000; /* black background */
+  
+  border: 9px solid #a93794; /* dark gray border */
+  border-radius: 5px;
+  width: 80%; /* adjust width to your liking */
+  margin: 20px auto; /* center the component */
+}
+
+.company-header {
+  background-color: #a93794; /* dark gray background */
+  padding-top: 0px;
+  padding-left: 4px;
+  margin-right: -8px;
+  margin-bottom: 4px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.company-logo {
+  max-width: 500px; /* set a maximum width of 80px */
+  max-height: 500px; /* set a maximum height of 80px */
+  margin: 10px; /* add some margin to center the image */
+  border-radius: 5px; /* add a slight border radius to give it a rounded corner */
+  margin-bottom: -25%;
+
+  background-color: #ffffff;
+}
+
+.company-details {
+  
+  padding: 10px;
+  font-family: Consolas, Monaco, 'Lucida Console', monospace; /* monospace font */
+  font-size: 14px;
+  color: #fff; /* white text */
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-info-center {
+  text-align: center;
+}
+
+.company-logo-container {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.company-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.company-description {
+  font-size: px; /* default font size */
+  text-align: left;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+@media (max-width: 1500px) {
+  .company-description {
+     font-size: 16px; /* slightly reduce font size under 1200px */
+   }
+ }
+@media (max-width: 1200px) {
+ .company-description {
+    font-size: 18px; /* slightly reduce font size under 1200px */
+  }
+}
+
+@media (max-width: 1000px) {
+ .company-description {
+    font-size: 16px; /* reduce font size under 1000px */
+  }
+}
+
+@media (max-width: 800px) {
+ .company-description {
+    font-size: 14px; /* reduce font size under 800px */
+  }
+}
+
+@media (max-width: 600px) {
+ .company-description {
+    font-size: 12px; /* reduce font size under 600px */
+  }
+}
+.company-stats {
+  margin-bottom: 10px;
+}
+
+.company-link {
+  margin-top: 10px;
+}
+
+.neon-btn {
+  background-color: #333; /* dark gray background */
+  color: #fff; /* white text */
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.neon-btn:hover {
+  background-color: #444; /* darker gray background */
+}
+
+.blinking-ticker {
+  animation: blink 1s infinite;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cursor {
+  font-size: 18px; /* adjust to your desired font size */
+  color: #666; /* adjust to your desired color */
+  font-family: monospace; /* optional, but recommended for a typewriter-like feel */
+  margin-left: -5px;
+}
+
+.typing {
+  opacity: 1;
+}
+
+.blinking {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.header-icons {
+  float: right;
+  margin-right: 10px;
+}
+
+.header-icons svg {
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
