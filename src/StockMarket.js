@@ -19,7 +19,6 @@ const StockMarket = (props) => {
     Date: '',
     Ticker: '',
   });
-  console.log(props.stock);
   const StockSymbol = useMemo(() => props.stock, [props.stock]);
 
   useEffect(() => {
@@ -65,7 +64,6 @@ const StockMarket = (props) => {
       console.error('Error fetching stock data:', error);
     }
   };
-  console.log(StockSymbol);
   if (StockSymbol === 'Initial') {
     return (
       <div className="company-overview-container2">

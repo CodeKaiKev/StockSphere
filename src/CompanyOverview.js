@@ -25,7 +25,6 @@ const CompanyOverview = (props) => {
   const [showLogo, setShowLogo] = useState(true);
 
   useEffect(() => {
-    console.log(props.symbol);
     if(props.symbol !== 'Default') {
       const fetchCompanyOverview = async () => {
       
@@ -34,7 +33,6 @@ const CompanyOverview = (props) => {
         try {
           const response = await axios.get(apiEndpoint);
           const data = response.data;
-          console.log('Company overview data:', data);
   
           // setCompanyDetails({
           //   Name: data.results.name,

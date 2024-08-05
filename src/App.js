@@ -32,7 +32,6 @@ function App() {
 
   const handleSelectStock = (stock) => {
     setChosenStock(stock.ticker);
-    console.log(chosenStock.ticker);
     setSearchQuery('');
   };
 
