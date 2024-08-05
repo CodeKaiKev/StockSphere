@@ -25,6 +25,7 @@ const CompanyOverview = (props) => {
   const [showLogo, setShowLogo] = useState(true);
 
   useEffect(() => {
+    if(props.symbol) {
     if(props.symbol !== 'Default') {
       const fetchCompanyOverview = async () => {
       
@@ -110,7 +111,7 @@ const CompanyOverview = (props) => {
       });
     }
     
-    
+  }
   }, [props.symbol]);
 
   const handleIconClick = () => {
